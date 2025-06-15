@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="Mega-Sena:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Mega_Sena_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Mega-Sena.jar">
+        <element id="module-output" name="Mega-Sena" />
+      </element>
+    </root>
+  </artifact>
+</component>

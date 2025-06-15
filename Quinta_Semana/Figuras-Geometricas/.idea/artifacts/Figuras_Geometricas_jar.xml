@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="Figuras-Geometricas:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Figuras_Geometricas_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Figuras-Geometricas.jar">
+        <element id="module-output" name="Figuras-Geometricas" />
+      </element>
+    </root>
+  </artifact>
+</component>
