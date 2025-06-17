@@ -1,0 +1,3 @@
+Nome|Marcos Santos, FIM;Peso Corporal|80,00;Altura|1,80;IMC|24,69;Interpretação|peso adequado
+Nome|Jorge Almeida, FIM;Peso Corporal|90,00;Altura|1,83;IMC|26,87;Interpretação|sobrepeso
+Nome|Felipe João, FIM;Peso Corporal|77,00;Altura|1,77;IMC|24,58;Interpretação|peso adequado

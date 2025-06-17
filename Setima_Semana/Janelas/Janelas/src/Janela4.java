@@ -7,27 +7,21 @@ import java.util.Scanner;
 
 public class Janela4 {
     public static void main(String[] args) {
-        // Janela Principal
         JFrame janelaPrincipal = new JFrame("Editor de Arquivo");
         janelaPrincipal.setSize(500, 200);
         janelaPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         janelaPrincipal.setLayout(new FlowLayout());
 
-        // Campo para palavra que será substituída
         JLabel labelBuscar = new JLabel("Buscar:");
         JTextField buscarCampo = new JTextField(15);
 
-        // Campo para nova palavra
         JLabel labelSubstituir = new JLabel("Substituir por:");
         JTextField substituirCampo = new JTextField(15);
 
-        // Label para mostrar o nome do arquivo
         JLabel fileLabel = new JLabel("Nenhum arquivo selecionado");
 
-        // Botão de selecionar arquivo
         JButton uploadButton = new JButton("Selecionar Arquivo");
 
-        // Ao clicar no botão
         uploadButton.addActionListener((ActionEvent e) -> {
             JFileChooser fileChooser = new JFileChooser();
             int result = fileChooser.showOpenDialog(janelaPrincipal);
@@ -45,7 +39,6 @@ public class Janela4 {
                 }
 
                 try {
-                    // Ler arquivo
                     Scanner sc = new Scanner(selectFile);
                     StringBuilder conteudo = new StringBuilder();
 
@@ -56,7 +49,6 @@ public class Janela4 {
                     }
                     sc.close();
 
-                    // Sobrescrever o arquivo
                     FileWriter writer = new FileWriter(selectFile);
                     writer.write(conteudo.toString());
                     writer.close();
@@ -71,7 +63,6 @@ public class Janela4 {
             }
         });
 
-        // Adicionando componentes
         janelaPrincipal.add(labelBuscar);
         janelaPrincipal.add(buscarCampo);
 
@@ -81,7 +72,6 @@ public class Janela4 {
         janelaPrincipal.add(uploadButton);
         janelaPrincipal.add(fileLabel);
 
-        // Deixando janela visível
         janelaPrincipal.setVisible(true);
     }
 }
